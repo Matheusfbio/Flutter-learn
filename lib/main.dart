@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
               MaterialPageRoute(builder: (_) => const InfoScreen()),
             );
           },
-          child: const Text('Ir para a Segunda Tela'),
+          child: const Text('Ir para a tela de informações'),
         ),
       ),
     );

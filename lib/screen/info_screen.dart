@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_til/screen/counter_screen.dart'; // 👈 Importa o CounterScreen
+import 'package:flutter_til/screen/widgets_screen.dart'; // 👈 Importa o CounterScreen
 
 class InfoScreen extends StatelessWidget {
   const InfoScreen({super.key});
@@ -20,6 +21,14 @@ class InfoScreen extends StatelessWidget {
                 );
               },
               child: const Text('Ir para o Contador'),
+            ),  ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const WidgetsScreen()),
+                );
+              },
+              child: const Text('Principais widgets do flutter'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
