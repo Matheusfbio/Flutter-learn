@@ -6,22 +6,31 @@ class WidgetsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Principais Widgets')),
+      appBar: AppBar(title: const Text('Principais widgets do flutter')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // 🟡 Padding
+        // ✅ Corrigido: usamos Padding dentro de 'body'
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            const Text('Linha com dois containers:', style: TextStyle(fontSize: 18)),
+            const Text(
+              'Linha com dois containers:',
+              style: TextStyle(fontSize: 18),
+            ),
 
             const SizedBox(height: 8),
 
-            Row( // 🟡 Row
+            Row(
               children: [
-                Expanded( // 🟡 Expanded
+                Expanded(
                   child: Container(
                     height: 100,
                     color: Colors.blue,
-                    child: const Center(child: Text('Container 1', style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                      child: Text(
+                        'Container 1',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -29,7 +38,12 @@ class WidgetsScreen extends StatelessWidget {
                   child: Container(
                     height: 100,
                     color: Colors.green,
-                    child: const Center(child: Text('Container 2', style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                      child: Text(
+                        'Container 2',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -42,11 +56,11 @@ class WidgetsScreen extends StatelessWidget {
             const SizedBox(height: 8),
 
             Expanded(
-              child: ListView( // 🟡 ListView
+              child: ListView(
                 children: List.generate(500, (index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4.0),
-                    child: Container( // 🟡 Container
+                    child: Container(
                       padding: const EdgeInsets.all(16),
                       color: Colors.grey[300],
                       child: Text('Item ${index + 1}'),
