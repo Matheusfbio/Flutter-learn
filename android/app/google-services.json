@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "136042810588",
+    "project_id": "flutter-til-25a2c",
+    "storage_bucket": "flutter-til-25a2c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136042810588:android:59eb0867aac1ec6a3db819",
+        "android_client_info": {
+          "package_name": "com.example.flutter_til"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVb39ynAFCxcWKWydrNp_IrivlYR9lVHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
